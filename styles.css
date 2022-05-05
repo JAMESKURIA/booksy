@@ -190,6 +190,9 @@ header {
 }
 
 .topic h1 {
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
   text-align: center;
   font-weight: 600;
   font-size: 3em;
@@ -243,7 +246,7 @@ header {
 /* BG section */
 .bg-section {
   background-image: url("./images/girl.jpg");
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   height: 40vh;
@@ -342,6 +345,7 @@ header {
 
 /* Newsletter Section */
 .newsletter-section {
+  background-position: center center;
   background-image: url("./images/girl.jpg");
 }
 .newsletter-section::after {
@@ -457,7 +461,7 @@ footer .newsletter-btn {
 
 .about .social i:hover {
   transition: 0.25s ease-out;
-  color: dodgerblue;
+  color: #202020;
 }
 
 .inner-links ul li {
@@ -471,5 +475,5 @@ footer .newsletter-btn {
 }
 
 .inner-links ul li a:hover {
-  color: dodgerblue;
+  color: #202020;
 }
