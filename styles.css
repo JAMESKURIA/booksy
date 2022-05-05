@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Nav Section */
+
+.navbar {
+  height: 10vh;
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 20px rgba(32, 32, 32, 0.3);
+}
+
+.nav-content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  height: 100%;
+  align-items: center;
+}
+
+.navlinks .navlink,
+.navlinks .cart-btn,
+.navlinks .search-btn {
+  list-style: none;
+}
+
+.navlinks .cart-btn i,
+.navlinks .search-btn i {
+  font-size: 20px;
+  outline: none;
+}
+
+.navlinks .navlink a {
+  text-decoration: none;
+  color: rgb(41, 39, 39);
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navlinks .navlink a:hover,
+.navlinks .navlink a:focus {
+  border-bottom: 2px solid #333;
+}
+
+/* Header section */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 4rem;
+  background-color: rgba(240, 230, 140, 0.5);
+}
+
+.left {
+  height: 50vh;
+  justify-self: center;
+}
+
+.header-right {
+  width: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header-right h2 {
+  font-size: 3em;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.separator {
+  height: 2px;
+  width: 80px;
+  background-color: #7e7777;
+}
+
+.header-right p {
+  font-size: 18px;
+  color: #535050;
+  line-height: 1.5em;
+}
+
+.cta-btn {
+  outline: none;
+  text-transform: uppercase;
+  color: #202020;
+  border: 2px solid #202020;
+  background: none;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  width: 50%;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+
+.cta-btn:hover {
+  background-color: #202020;
+  color: whitesmoke;
+}
+
+/* Banner Section */
+.banner-section {
+  display: flex;
+  gap: 2rem;
+  height: 40vh;
+  margin: 2rem;
+}
+
+.banner-left .cta-btn,
+.banner-right .cta-btn {
+  width: 100%;
+}
+
+.banner-left h1,
+.banner-right h1,
+.news-edition-section h1 {
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+
+.banner-left {
+  background-image: url("./images/banner-book.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0px 2rem;
+}
+
+.banner-right {
+  background-image: url("./images/banner-book2.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0px 2rem;
+}
+
+/* News Edition Section */
+.news-edition-section {
+  background-color: whitesmoke;
+  padding: 2rem 4rem;
+  padding-bottom: 5rem;
+}
+.news-edition-section2 {
+  padding-top: 6rem;
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.separator2 {
+  height: 2px;
+  width: 80px;
+  background-color: #7e7777;
+  margin-bottom: 1rem;
+}
+
+.topic h2 {
+  font-size: 18px;
+  color: #535050;
+  line-height: 1.5em;
+  font-weight: normal;
+  width: 27%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+.book-card img {
+  height: 20vh;
+}
+
+.book-card h3 {
+  font-weight: 400;
+}
+
+.book-card span {
+  color: #535050;
+  font-weight: 400;
+}
+
+/* BG section */
+.bg-section {
+  background-image: url("./images/girl.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bg-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(167, 117, 42, 0.2);
+  background-blend-mode: overlay;
+}
+
+.bg-section h1 {
+  z-index: 20;
+}
+
+.bg-section h1 span {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.6em;
+  color: #fff;
+}
+
+/* Blog Section */
+.blog-section {
+  padding: 4rem 0px;
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  width: 75%;
+  margin: auto;
+}
+
+.blog-card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card img {
+  height: 30vh;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.blog-card h2 {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.blog-card div {
+  text-align: center;
+  padding: 1rem;
+  line-height: 2em;
+  padding: 2rem 0px;
+}
+
+/* Partners Section */
+.partners-section {
+  background-color: whitesmoke;
+  padding: 4rem 0px;
+}
+
+.partners-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+
+.partners-section .partner {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner img {
+  height: 10vh;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background-image: url("./images/girl.jpg");
+}
+.newsletter-section::after {
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+.newsletter-section .topic {
+  color: #fff;
+  z-index: 5;
+}
+
+.newsletter-section .topic .separator2 {
+  background-color: #fff;
+  margin: 1rem 0px;
+}
+
+.newsletter-section .topic h2 {
+  color: #fff;
+  width: 70%;
+}
+
+.newsletter-btn {
+  border: none;
+  background: none;
+  outline: none;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 1px;
+}
+
+.newsletter-btn input {
+  outline: none;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.newsletter-btn i {
+  border: none;
+  color: tomato;
+  padding: 20px;
+  background-color: #ddd;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(136, 136, 136);
+}
+
+.footer-content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  /* gap: 4rem; */
+  color: whitesmoke;
+  padding: 4rem 0px;
+}
+.footer-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  line-height: 1.5em;
+}
+
+.footer-menu h3 {
+  font-weight: 700;
+}
+
+.footer-menu p {
+  font-weight: 400;
+  width: 80%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.gallery img {
+  height: 10vh;
+  width: 10vh;
+  object-fit: cover;
+  object-position: center center;
+}
+
+footer .newsletter-btn {
+  outline: none;
+  border: none;
+  width: fit-content;
+  margin-top: 2rem;
+}
+
+.about .social {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about .social i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.about .social i:hover {
+  transition: 0.25s ease-out;
+  color: dodgerblue;
+}
+
+.inner-links ul li {
+  list-style: none;
+}
+
+.inner-links ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all 0.5s ease-out;
+}
+
+.inner-links ul li a:hover {
+  color: dodgerblue;
+}
